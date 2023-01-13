@@ -7,11 +7,63 @@
     <title>Elian Gonzalo</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+
+    <nav class="navbar bg-transparent navbar-dark fixed-top nav-custom">
+        <div class="container-fluid justify-content-end">
+          <button class="navbar-toggler nav-button-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon navbar-toggler-custom"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark offcanvas-custom" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Dark offcanvas</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Acerca de mí</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Educación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Servicios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contacto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid inicio d-flex align-items-center p-5">
+      <video muted autoplay loop class="video-inicio">
+        <source src="./img/bg-inicio.mp4">
+      </video>
+      <div class="row p-4 capa-inicio">
+        <div class="col-12 textos-bienvenida">
+            <h3 class="fw-light" data-aos="fade" data-aos-once="true" data-aos-duration="1000">Hola!</h3>
+            <h1><span data-aos="fade" data-aos-once="true" data-aos-duration="833" data-aos-delay="1400" class="span-h1_1">Soy </span><span class="span-h1_2" data-aos="fade" data-aos-delay="2200" data-aos-duration="833">Elian Gonzalo</span></h1>
+            <h2 class="fw-lighter"><span data-aos="fade" data-aos-duration="833" data-aos-delay="3000" class="blink-effect">Desarrollador Web Estático & Estudiante de programación FullStack</span></h2>
+        </div>
+      </div>
+    </div>
     
-
-
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
