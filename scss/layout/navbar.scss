@@ -7,5 +7,22 @@
 
 .offcanvas-custom {
     width: 100vw !important;
-    transition: all ease-in 0.4s !important;
+    transition: all ease 0.4s !important;
+    .offcanvas-body {
+        background-color: rgb(32, 32, 32) !important;
+    }
+    .offcanvas-header {
+        background-color: rgb(32, 32, 32) !important;
+    }
+
+}
+
+.canvas-btn-custom {
+    border: 0 !important;
+    background-color: transparent !important;
+    color: transparent !important;
+}
+
+.nav-link {
+    font-size: 2rem !important;
 }

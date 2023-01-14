@@ -1,24 +1,25 @@
 .inicio {
     height: 100vh;
     position: relative;
-
+    overflow: hidden !important;
     .textos-bienvenida {
         color: rgb(76, 226, 181);
+        text-align: left;
         h1{
             .span-h1_1 {
                 font-weight: lighter;
-                font-size: 3.5rem;
+                font-size: 2rem;
             }
             .span-h1_2 {
-                font-size: 4.5rem;
+                font-size: 2rem;
                 font-weight: bolder;
             }
         }
         h2 {
-            font-size: 1.5rem;
+            font-size: 0.9rem;
         }
         h3 {
-            font-size: 7rem;
+            font-size: 5rem;
         }
     }
     .video-inicio {
@@ -38,13 +39,19 @@
     font-family: monospace;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 66ch;
-    animation: typing 4s steps(66), blink .4s infinite step-end alternate;
+    width: 35ch;
+    animation: typing 2s steps(35), blink .4s infinite step-end alternate;
     animation-delay: 3s;
     overflow:hidden;
     
     }
 
+}
+
+.eph-inicio-sm {
+    @include max-576 {
+        display: none;
+    }
 }
 
 @keyframes typing {
