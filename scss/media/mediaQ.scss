@@ -1,6 +1,18 @@
 
+@mixin min-398 {
+    @media (min-width: 398px) {
+        @content
+    }
+}
+
+@mixin minmax-398 {
+    @media (min-width: 398px) and (max-width: 575px) {
+        @content
+    }
+}
+
 @mixin max-576 {
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
         @content
     }
 }
@@ -31,6 +43,18 @@
 
 @mixin min-1400 {
     @media (min-width: 1400px) {
+        @content
+    }
+}
+
+@mixin min-1550 {
+    @media (min-width: 1550px) {
+        @content
+    }
+}
+
+@mixin min-1920 {
+    @media (min-width: 1920px) {
         @content
     }
 }

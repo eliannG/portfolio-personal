@@ -19,6 +19,21 @@
 .nav-link {
   font-size: 2rem !important; }
 
+.navbar-toggler-icon {
+  width: 2.3em !important;
+  height: 2.3em !important; }
+
+.btn-close {
+  display: inline-block !important;
+  width: 1.5em !important;
+  height: 1.5em !important;
+  vertical-align: middle !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 100% !important;
+  border: none !important;
+  --bs-btn-close-focus-shadow: 0 !important; }
+
 .inicio {
   height: 100vh;
   position: relative;
@@ -26,16 +41,56 @@
   .inicio .textos-bienvenida {
     color: #4ce2b5;
     text-align: left; }
+    @media (min-width: 398px) and (max-width: 575px) {
+      .inicio .textos-bienvenida {
+        padding-left: 3rem; } }
+    @media (min-width: 1920px) {
+      .inicio .textos-bienvenida {
+        padding-left: 8rem !important; } }
     .inicio .textos-bienvenida h1 .span-h1_1 {
       font-weight: lighter;
       font-size: 2rem; }
+      @media (min-width: 576px) {
+        .inicio .textos-bienvenida h1 .span-h1_1 {
+          font-size: 3rem; } }
+      @media (min-width: 768px) {
+        .inicio .textos-bienvenida h1 .span-h1_1 {
+          font-size: 4.3rem; } }
+      @media (min-width: 1550px) {
+        .inicio .textos-bienvenida h1 .span-h1_1 {
+          font-size: 5rem; } }
     .inicio .textos-bienvenida h1 .span-h1_2 {
       font-size: 2rem;
       font-weight: bolder; }
+      @media (min-width: 576px) {
+        .inicio .textos-bienvenida h1 .span-h1_2 {
+          font-size: 3rem; } }
+      @media (min-width: 768px) {
+        .inicio .textos-bienvenida h1 .span-h1_2 {
+          font-size: 4.3rem;
+          font-weight: bold; } }
+      @media (min-width: 1550px) {
+        .inicio .textos-bienvenida h1 .span-h1_2 {
+          font-size: 5rem; } }
     .inicio .textos-bienvenida h2 {
       font-size: 0.9rem; }
+      @media (min-width: 576px) {
+        .inicio .textos-bienvenida h2 {
+          font-size: 0.9rem; } }
+      @media (min-width: 768px) {
+        .inicio .textos-bienvenida h2 {
+          font-size: 1.2rem; } }
+      @media (min-width: 1550px) {
+        .inicio .textos-bienvenida h2 {
+          font-size: 1.8rem; } }
     .inicio .textos-bienvenida h3 {
       font-size: 5rem; }
+      @media (min-width: 576px) {
+        .inicio .textos-bienvenida h3 {
+          font-size: 6.3rem; } }
+      @media (min-width: 1550px) {
+        .inicio .textos-bienvenida h3 {
+          font-size: 10.5rem; } }
   .inicio .video-inicio {
     position: absolute;
     top: 0;
@@ -56,8 +111,22 @@
     animation-delay: 3s;
     overflow: hidden; }
 
-@media (max-width: 576px) {
+@media (max-width: 575px) {
   .eph-inicio-sm {
+    display: none; } }
+
+.eph-inicio-sm .blink-effect {
+  display: block;
+  font-family: monospace;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 66ch;
+  animation: typing 2s steps(66), blink 0.4s infinite step-end alternate;
+  animation-delay: 3s;
+  overflow: hidden; }
+
+@media (min-width: 576px) {
+  .eph-inicio-xs {
     display: none; } }
 
 @keyframes typing {

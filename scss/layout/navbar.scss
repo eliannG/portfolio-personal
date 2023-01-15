@@ -26,3 +26,20 @@
 .nav-link {
     font-size: 2rem !important;
 }
+
+.navbar-toggler-icon {
+    width: 2.3em !important;
+    height: 2.3em !important;
+}
+
+.btn-close {
+    display: inline-block !important;
+    width: 1.5em !important;
+    height: 1.5em !important;
+    vertical-align: middle !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: 100% !important;
+    border: none !important;
+    --bs-btn-close-focus-shadow: 0 !important;
+}
