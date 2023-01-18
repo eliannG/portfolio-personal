@@ -9,10 +9,14 @@
     width: 100vw !important;
     transition: all ease 0.4s !important;
     .offcanvas-body {
-        background-color: rgb(32, 32, 32) !important;
+        background: rgba(0, 0, 0, 0) !important;
+        backdrop-filter: blur(16.7px) !important;
+        -webkit-backdrop-filter: blur(16.7px) !important;
     }
     .offcanvas-header {
-        background-color: rgb(32, 32, 32) !important;
+        background: rgba(0, 0, 0, 0) !important;
+        backdrop-filter: blur(16.7px) !important;
+        -webkit-backdrop-filter: blur(16.7px) !important;
     }
 
 }

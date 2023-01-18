@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de mí</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <nav class="navbar bg-transparent navbar-dark fixed-top nav-custom">
+    <div class="container-fluid justify-content-end">
+      <button class="navbar-toggler nav-button-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon navbar-toggler-custom"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark offcanvas-custom bg-transparent" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Elián Gonzalo</h5>
+          <button type="button" class="btn-close btn-close-white canvas-btn-custom" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body d-flex align-items-center">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Acerca de mí</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Educación</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+    <div class="container-fluid position-relative about-container overflow-hidden">
+        <video autoplay muted loop src="../img/bg-about.mp4" class="bg-about position-absolute top-0 start-0 object-fit-cover"></video>
+        <div class="row z-2 position-relative p-5">
+          <div class="col-12 text-center">
+            <h1 class="h1-about">ACERCA DE MÍ</h1>
+          </div>
+          <div class="col-12">
+            <p class="text-center">Soy un Desarrollador de webs estáticas y soy estudiante de programación FullStack, con altos intereses en el futuro, o mejor dicho, la Inteligencia Artificial.</p>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="row">
+                <div class="col-4">
+                  <img src="../img/fotodeperfil.jpg" alt="Foto de Elián Gonzalo">
+                </div>
+                <div class="col-8">
+                  <p>Fecha de nacimiento: <span>05/10/2005</span></p>
+                  <p>En busca de: <span>Primer experiencia laboral</span></p>
+                  <p>Nacionalidad: <span>Argentina e Italiana</span></p>
+                </div>
+                <div class="col-12">
+                  <p>Hoy en día el mundo digital forma una parte muy importante de nuestra vida y por lo tanto es de suma importancia tener la responsabilidad de cada día intentar mejorar la CALIDAD de ese mundo y hacerlo lo mas EFICIENTE posible. </p>
+                  <p>Es por eso que me comprometo con ir perfeccionando ambos términos cada día, a lo largo de las experiencias y la formación constante en este rubro tan cambiante a lo largo del tiempo.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="row">
+                <h4>Habilidades</h4> 
+                <div class="col-12 skills-icons">
+                  <img src="../img/bootstrap-fill-svgrepo-com.svg" alt="Bootstrap">
+                  <img src="../img/css-3-svgrepo-com.svg" alt="CSS3">
+                  <img src="../img/git-svgrepo-com.svg" alt="GIT">
+                  <img src="../img/html-svgrepo-com.svg" alt="HTML5">
+                  <img src="../img/sass-svgrepo-com.svg" alt="SASSS">
+                </div>
+                <div class="col-12">
+                  <p>Tengo el objetivo, como mencioné, de tener una formación constante en el rubro, por lo que pretendo por consiguiente hacer crecer mis conocimientos en cuanto a lenguajes de programación, por lo que se irán reflejando en el apartado superior. Esto nunca es el final, siempre es el comienzo.</p>
+                </div>               
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
