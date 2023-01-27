@@ -1,3 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+.fancy {
+  background-color: transparent;
+  border: 2px solid #EF3E36;
+  border-radius: 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 1.25em 2em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  transition: all 0.3s ease-in-out;
+  user-select: none;
+  font-size: 13px; }
+
+.fancy::before {
+  content: " ";
+  width: 1.5625rem;
+  height: 2px;
+  background: #EF3E36;
+  top: 50%;
+  left: 1.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  transform-origin: center;
+  transition: background 0.3s linear, width 0.3s linear; }
+
+.fancy .text {
+  font-size: 1.125em;
+  line-height: 1.33333em;
+  display: block;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #DBD9DB; }
+
+.fancy .top-key {
+  height: 2px;
+  width: 1.5625rem;
+  top: -2px;
+  left: 0.625rem;
+  position: absolute;
+  background: #1F2421;
+  transition: width 0.5s ease-out, left 0.3s ease-out; }
+
+.fancy .bottom-key-1 {
+  height: 2px;
+  width: 1.5625rem;
+  right: 1.875rem;
+  bottom: -2px;
+  position: absolute;
+  background: #1F2421;
+  transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.fancy .bottom-key-2 {
+  height: 2px;
+  width: 0.625rem;
+  right: 0.625rem;
+  bottom: -2px;
+  position: absolute;
+  background: #1F2421;
+  transition: width 0.5s ease-out, right 0.3s ease-out; }
+
+.fancy:hover {
+  color: white;
+  background: #EF3E36; }
+
+.fancy:hover::before {
+  width: 0.9375rem;
+  background: white; }
+
+.fancy:hover .text {
+  color: white;
+  padding-left: 1.5em; }
+
+.fancy:hover .top-key {
+  left: -2px;
+  width: 0px; }
+
+.fancy:hover .bottom-key-1,
+.fancy:hover .bottom-key-2 {
+  right: 0;
+  width: 0; }
+
 .nav-button-custom {
   border: 0 !important;
   background-color: transparent !important;
@@ -43,8 +136,9 @@
   position: relative;
   overflow: hidden !important; }
   .inicio .textos-bienvenida {
-    color: #4ce2b5;
-    text-align: left; }
+    color: white;
+    text-align: left;
+    text-shadow: 2px 4px 50px rgba(0, 0, 0, 0.6); }
     @media (min-width: 398px) and (max-width: 575px) {
       .inicio .textos-bienvenida {
         padding-left: 3rem; } }
@@ -141,21 +235,76 @@
   50% {
     border-color: transparent; } }
 
+.about-body_bgcolor {
+  background-color: #1F2421; }
+
+.about-p {
+  color: #DBD9DB; }
+
 .about-container {
   min-height: 100vh; }
   .about-container .bg-about {
     height: 100%;
     width: 100%; }
-  .about-container .h1-about {
-    color: white; }
 
-.skills-icons img {
-  height: auto;
-  width: 5rem; }
+.skills-icons {
+  border-radius: 20px;
+  border-color: #DBD9DB !important;
+  box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75); }
+  .skills-icons img {
+    height: auto;
+    width: 5rem;
+    border-top-color: #DBD9DB !important;
+    border-bottom-color: #DBD9DB !important;
+    border-left-color: #DBD9DB !important;
+    border-right-color: #DBD9DB !important; }
 
 .skills-container {
   height: 100%; }
 
 .skills-border {
   height: 5rem;
-  width: 5rem; }
+  width: 5rem;
+  border-color: #06D6A0 !important; }
+
+.about-img {
+  width: 100%;
+  border-width: 0.3rem;
+  border-style: solid;
+  border-radius: 5px;
+  box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px -6px rgba(0, 0, 0, 0.75); }
+
+.about-datos {
+  height: 100% !important; }
+
+.h1-about {
+  font-weight: 650;
+  font-size: 4rem;
+  color: #DBD9DB; }
+  .h1-about span {
+    color: #06D6A0; }
+
+.about-p-desc_font {
+  font-family: 'Quicksand', sans-serif; }
+
+.about-p-me_font {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 800; }
+
+.skills-border-custom {
+  border-top-color: #06D6A0 !important;
+  border-left-color: #06D6A0 !important; }
+
+.about-divisionline {
+  color: #06D6A0;
+  opacity: 1;
+  width: 50%;
+  border-width: 0.2rem; }
+
+.about-subtitle {
+  font-size: 2rem;
+  color: #06D6A0; }

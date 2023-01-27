@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acerca de mí</title>
-    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../styles/styles.css">    
 </head>
-<body>
+<body class="about-body_bgcolor">
 
-  <nav class="navbar bg-transparent fixed-top nav-custom">
+  <nav class="navbar bg-transparent navbar-dark fixed-top nav-custom">
     <div class="container-fluid justify-content-end">
       <button class="navbar-toggler nav-button-custom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
         <span class="navbar-toggler-icon navbar-toggler-custom"></span>
@@ -47,51 +47,56 @@
     </div>
   </nav>
 
-    <div class="container-fluid position-relative about-container overflow-hidden">
-        <video autoplay muted loop src="../img/bg-about.mp4" class="bg-about position-absolute top-0 start-0 object-fit-cover"></video>
-        <div class="row z-2 position-relative p-5">
-          <div class="col-12 text-center">
-            <h1 class="h1-about">ACERCA DE MÍ</h1>
-          </div>
-          <div class="col-12">
-            <p class="text-center">Soy un Desarrollador de webs estáticas y soy estudiante de programación FullStack, con altos intereses en el futuro, o mejor dicho, la Inteligencia Artificial.</p>
+    <div class="container about-container overflow-hidden d-flex justify-content-center align-items-center flex-column gap-4">
+          <div class="row text-center">
+            <h1 class="h1-about"><span>ACERCA</span> DE MÍ</h1>
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="row">
-                <div class="col-4">
-                  <img src="../img/fotodeperfil.jpg" alt="Foto de Elián Gonzalo">
+              <div class="row gap-3">
+                <div class="row">
+                    <div class="col-5">
+                      <img src="../img/fotodeperfil.jpg" alt="Foto de Elián Gonzalo" class="about-img">
+                    </div>
+                    <div class="col-7 about-datos d-flex flex-column justify-content-center">
+                      <p class="about-p-me_font about-p">Fecha de nacimiento: <span>05/10/2005</span></p>
+                      <p class="about-p-me_font about-p">En busca de: <span>Experiencia laboral / Freelancer disponible</span></p>
+                      <p class="about-p-me_font about-p">E-mail: contacto@eliangonzalo.com</p>
+                      <a class="fancy" href="#">
+                        <span class="top-key"></span>
+                        <span class="text text-center">Descarcar CV</span>
+                        <span class="bottom-key-1"></span>
+                        <span class="bottom-key-2"></span>
+                      </a>
+                    </div>
                 </div>
-                <div class="col-8">
-                  <p>Fecha de nacimiento: <span>05/10/2005</span></p>
-                  <p>En busca de: <span>Primer experiencia laboral</span></p>
-                  <p>Nacionalidad: <span>Argentina e Italiana</span></p>
+                <div class="row d-flex mt-3 justify-content-center">
+                  <hr class="about-divisionline">
                 </div>
-                <div class="col-12">
-                  <p>Hoy en día el mundo digital forma una parte muy importante de nuestra vida y por lo tanto es de suma importancia tener la responsabilidad de cada día intentar mejorar la CALIDAD de ese mundo y hacerlo lo mas EFICIENTE posible. </p>
-                  <p>Es por eso que me comprometo con ir perfeccionando ambos términos cada día, a lo largo de las experiencias y la formación constante en este rubro tan cambiante a lo largo del tiempo.</p>
+                <div class="row">
+                  <p class="about-p-desc_font about-p">Hoy en día el mundo digital forma una parte muy importante de nuestra vida y por lo tanto es de suma importancia tener la responsabilidad de cada día intentar mejorar la CALIDAD de ese mundo y hacerlo lo mas EFICIENTE posible. </p>
+                  <p class="about-p-desc_font about-p">Es por eso que me comprometo con ir perfeccionando ambos términos cada día, a lo largo de las experiencias y la formación constante en este rubro tan cambiante a lo largo del tiempo.</p>
                 </div>
               </div>
             </div>
             <div class="col-6">                
-              <h4>HABILIDADES</h4>
+              <h4 class="text-center about-subtitle">HABILIDADES</h4>
               <div class="row gap-3 d-flex flex-column justify-content-around skills-container">
-                <div class="col-12 skills-icons border border-dark text-center border-3 p-2">
-                  <img src="../img/bootstrap-fill-svgrepo-com.svg" alt="Bootstrap">
-                  <img src="../img/css-3-svgrepo-com.svg" alt="CSS3">
-                  <img src="../img/git-svgrepo-com.svg" alt="GIT">
-                  <img src="../img/html-svgrepo-com.svg" alt="HTML5">
-                  <img src="../img/sass-svgrepo-com.svg" alt="SASSS">
+                <div class="col-12 skills-icons border border-dark text-center border-2 p-2">
+                  <img src="../img/brand-bootstrap-svgrepo-com (1).svg" alt="Bootstrap">
+                  <img src="../img/css3.svg" alt="CSS3">
+                  <img src="../img/git-svgrepo-com (1).svg" alt="GIT">
+                  <img src="../img/html5.svg" alt="HTML5">
+                  <img src="../img/sass-fill-svgrepo-com (1).svg" alt="SASSS">
                 </div>
                 <div class="col-12 position-relative p-3 text-center">
-                  <div class="border-start border-top border-dark border-2 position-absolute skills-border top-0 start-0"></div>
-                  <div class="border-end border-bottom border-dark border-2 position-absolute skills-border bottom-0 end-0"></div>
-                  <p class="mb-0">Tengo el objetivo, como mencioné, de tener una formación constante en el rubro, por lo que pretendo por consiguiente hacer crecer mis conocimientos en cuanto a lenguajes de programación, por lo que se irán reflejando en el apartado superior. Esto nunca es el final, siempre es el comienzo.</p>
+                  <div class="border-start border-top border-2 position-absolute skills-border top-0 start-0"></div>
+                  <div class="border-end border-bottom border-2 position-absolute skills-border bottom-0 end-0"></div>
+                  <p class="mb-0 about-p about-p-desc_font">Tengo el objetivo, como mencioné, de tener una formación constante en el rubro, por lo que pretendo por consiguiente hacer crecer mis conocimientos en cuanto a lenguajes de programación, por lo que se irán reflejando en el apartado superior. Esto nunca es el final, siempre es el comienzo.</p>
                 </div>               
               </div>
             </div>
           </div>
-        </div>
     </div>
 
     <script src="../bootstrap/js/bootstrap.min.js"></script>

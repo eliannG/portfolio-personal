@@ -1,11 +1,19 @@
+$primary-color: #DBD9DB;
+$secondary-color: #06D6A0;
+
+.about-body_bgcolor {
+    background-color: #1F2421;
+}
+
+.about-p {
+    color: $primary-color;
+}
+
 .about-container {
     min-height: 100vh;
     .bg-about {
         height: 100%;
         width: 100%;
-    }
-    .h1-about {
-        color: white;
     }
     
 }
@@ -14,7 +22,16 @@
     img {
         height: auto;
         width: 5rem;   
+        border-top-color: $primary-color !important;
+        border-bottom-color: $primary-color !important;
+        border-left-color: $primary-color !important;
+        border-right-color: $primary-color !important;
     }
+    border-radius: 20px;
+    border-color: $primary-color !important;
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
 }
 
 .skills-container {
@@ -24,4 +41,56 @@
 .skills-border {
     height: 5rem; 
     width: 5rem; 
+    border-color: $secondary-color !important;
 }
+
+.about-img {
+    width: 100%;
+    border-width: 0.3rem;
+    border-style:solid;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    
+}
+
+.about-datos {
+    height: 100% !important;
+}
+
+.h1-about {
+    font-weight: 650;
+    font-size: 4rem;
+    color: $primary-color;
+    span {
+        color:$secondary-color;
+    }
+}
+
+.about-p-desc_font {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.about-p-me_font {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 800;
+}
+
+.skills-border-custom {
+    border-top-color: $secondary-color !important;
+    border-left-color: $secondary-color !important;
+}
+
+.about-divisionline {
+    color: $secondary-color;
+    opacity: 1;
+    width: 50%;
+    border-width: 0.2rem;
+}
+
+.about-subtitle {
+    font-size: 2rem;
+    color: $secondary-color;
+}
+
