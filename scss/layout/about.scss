@@ -3,6 +3,9 @@ $secondary-color: #06D6A0;
 
 .about-body_bgcolor {
     background-color: #1F2421;
+    @include min-992 {
+        overflow-y: hidden;
+    }
 }
 
 .about-p {
@@ -21,11 +24,17 @@ $secondary-color: #06D6A0;
 .skills-icons {
     img {
         height: auto;
-        width: 5rem;   
+        width: 3.5rem;   
         border-top-color: $primary-color !important;
         border-bottom-color: $primary-color !important;
         border-left-color: $primary-color !important;
         border-right-color: $primary-color !important;
+        @include min-768 {
+            width: 5rem;
+        }
+        @include min-1920 {
+            width: 6rem;
+        }
     }
     border-radius: 20px;
     border-color: $primary-color !important;
@@ -46,6 +55,15 @@ $secondary-color: #06D6A0;
 
 .about-img {
     width: 100%;
+    @include minmax-398 {
+        width: 75%;
+    }
+    @include min-576 {
+        width: 70%;
+    }
+    @include min-768 {
+        width: 100%;
+    }
     border-width: 0.3rem;
     border-style:solid;
     border-radius: 5px;
@@ -61,7 +79,19 @@ $secondary-color: #06D6A0;
 
 .h1-about {
     font-weight: 650;
-    font-size: 4rem;
+    font-size: 2.3rem;
+    @include min-768 {
+        font-size: 3.2rem;
+    }
+    @include min-992 {
+        font-size: 2.7rem;
+    }
+    @include min-1200 {
+        font-size: 4rem;
+    }
+    @include min-1920 {
+        font-size: 5.2rem;
+    }
     color: $primary-color;
     span {
         color:$secondary-color;
@@ -70,11 +100,29 @@ $secondary-color: #06D6A0;
 
 .about-p-desc_font {
     font-family: 'Quicksand', sans-serif;
+    @include min-1400 {
+        font-size: 1.2rem;
+    }
+    @include min-1920 {
+        font-size: 1.5rem;
+    }
 }
 
 .about-p-me_font {
     font-family: 'Quicksand', sans-serif;
     font-weight: 800;
+    @include min-768 {
+        font-size: 0.8rem;
+    }
+    @include min-1200 {
+        font-size: 1rem;
+    }
+    @include min-1400 {
+        font-size: 1.2rem;
+    }
+    @include min-1920 {
+        font-size: 1.2893rem;
+    }
 }
 
 .skills-border-custom {
@@ -92,5 +140,11 @@ $secondary-color: #06D6A0;
 .about-subtitle {
     font-size: 2rem;
     color: $secondary-color;
+    @include min-1400 {
+        font-size: 2.5rem;
+    }
+    @include min-1920 {
+        font-size: 3.8rem;
+    }
 }
 

@@ -36,6 +36,9 @@
    
 .fancy .text {
     font-size: 1.125em;
+    @include min-1920 {
+        font-size: 1.3rem;
+    }
     line-height: 1.33333em;
     display: block;
     text-align: left;
