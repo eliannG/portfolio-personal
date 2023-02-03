@@ -47,7 +47,9 @@
     height: 330vh;
     background-color: $secondary-color;
     width: 0.35rem;
-    // margin-left: 1.575rem;
+    @include max-768 {
+    margin-left: 1.575rem;        
+    }
 }
 
 .backlin {
@@ -88,8 +90,7 @@
     height: 3.5rem;
     border-style: dashed !important;
     div {
-        border-color: $primary-color;
-        border-style: dashed;
+        background-color: $primary-color;
         z-index: 5;
         border-radius: 50%;
         width: 1.75rem;
@@ -112,6 +113,9 @@
     height: 55vh;
     width: 0.35rem;
     top: -27.5vh;
+    @include max-768 {
+        margin-left: 1.575rem;
+    }
     div {
         height: 6.125vh;
         width: 0.35rem;

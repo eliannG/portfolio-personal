@@ -408,6 +408,9 @@
   height: 330vh;
   background-color: #06D6A0;
   width: 0.35rem; }
+  @media (max-width: 768px) {
+    .education-itemsline {
+      margin-left: 1.575rem; } }
 
 .backlin {
   height: 2px;
@@ -442,8 +445,7 @@
   height: 3.5rem;
   border-style: dashed !important; }
   .education-itemglobe-notfinished div {
-    border-color: #DBD9DB;
-    border-style: dashed;
+    background-color: #DBD9DB;
     z-index: 5;
     border-radius: 50%;
     width: 1.75rem;
@@ -462,6 +464,9 @@
   height: 55vh;
   width: 0.35rem;
   top: -27.5vh; }
+  @media (max-width: 768px) {
+    .education-line-notcontainer {
+      margin-left: 1.575rem; } }
   .education-line-notcontainer div {
     height: 6.125vh;
     width: 0.35rem;
