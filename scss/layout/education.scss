@@ -1,0 +1,121 @@
+
+.education-body {
+    background-color: #1F2421;
+}
+
+.education-h1 {
+    color: $secondary-color;
+    font-weight: 650;
+    font-size: 2.3rem;
+    @include min-768 {
+        font-size: 3.2rem;
+    }
+    @include min-992 {
+        font-size: 2.7rem;
+    }
+    @include min-1200 {
+        font-size: 4rem;
+    }
+    @include min-1920 {
+        font-size: 5.2rem;
+    }
+    span {
+        color: $primary-color;
+    }
+}
+
+.education-itemglobe {
+    border-color: $secondary-color !important;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    div {
+        background-color: $primary-color;
+        z-index: 5;
+        border-radius: 50%;
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+}
+
+.education-itemscontainer {
+    height: 55vh;
+    width: 100%;
+}
+
+.education-itemsline {
+    height: 330vh;
+    background-color: $secondary-color;
+    width: 0.35rem;
+    // margin-left: 1.575rem;
+}
+
+.backlin {
+    height: 2px;
+    width: 5rem;
+    background-color: $primary-color;
+}
+
+.education-card {
+    background: rgba(219, 217, 219, 0.07);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(219, 217, 219, 1);
+}
+
+.card-icon {
+    height: 4rem;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: $primary-color;
+    text-align: center;
+}
+
+.card-description {
+    font-size: 1.2rem;
+    text-align: center;
+    color: $quaternary-color;
+}
+
+.education-itemglobe-notfinished {
+    border-color: $primary-color !important;
+    border-radius: 50%;
+    width: 3.5rem;
+    height: 3.5rem;
+    border-style: dashed !important;
+    div {
+        border-color: $primary-color;
+        border-style: dashed;
+        z-index: 5;
+        border-radius: 50%;
+        width: 1.75rem;
+        height: 1.75rem;
+    }
+}
+
+.education-itemscontainer-notfinished {
+    filter: grayscale(100%);
+}
+
+.education-itemsline-notfinished {
+    height: 55vh;
+    background-color: $secondary-color;
+    width: 0.35rem;
+    top: -27.5vh;
+}
+
+.education-line-notcontainer {
+    height: 55vh;
+    width: 0.35rem;
+    top: -27.5vh;
+    div {
+        height: 6.125vh;
+        width: 0.35rem;
+        margin-top: 1.5vh;
+        background-color: gray;
+    }
+}

@@ -365,3 +365,105 @@
   @media (min-width: 1920px) {
     .about-subtitle {
       font-size: 3.8rem; } }
+
+.education-body {
+  background-color: #1F2421; }
+
+.education-h1 {
+  color: #06D6A0;
+  font-weight: 650;
+  font-size: 2.3rem; }
+  @media (min-width: 768px) {
+    .education-h1 {
+      font-size: 3.2rem; } }
+  @media (min-width: 992px) {
+    .education-h1 {
+      font-size: 2.7rem; } }
+  @media (min-width: 1200px) {
+    .education-h1 {
+      font-size: 4rem; } }
+  @media (min-width: 1920px) {
+    .education-h1 {
+      font-size: 5.2rem; } }
+  .education-h1 span {
+    color: #DBD9DB; }
+
+.education-itemglobe {
+  border-color: #06D6A0 !important;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem; }
+  .education-itemglobe div {
+    background-color: #DBD9DB;
+    z-index: 5;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem; }
+
+.education-itemscontainer {
+  height: 55vh;
+  width: 100%; }
+
+.education-itemsline {
+  height: 330vh;
+  background-color: #06D6A0;
+  width: 0.35rem; }
+
+.backlin {
+  height: 2px;
+  width: 5rem;
+  background-color: #DBD9DB; }
+
+.education-card {
+  background: rgba(219, 217, 219, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #dbd9db; }
+
+.card-icon {
+  height: 4rem; }
+
+.card-title {
+  font-size: 1.5rem;
+  color: #DBD9DB;
+  text-align: center; }
+
+.card-description {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #EF3E36; }
+
+.education-itemglobe-notfinished {
+  border-color: #DBD9DB !important;
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-style: dashed !important; }
+  .education-itemglobe-notfinished div {
+    border-color: #DBD9DB;
+    border-style: dashed;
+    z-index: 5;
+    border-radius: 50%;
+    width: 1.75rem;
+    height: 1.75rem; }
+
+.education-itemscontainer-notfinished {
+  filter: grayscale(100%); }
+
+.education-itemsline-notfinished {
+  height: 55vh;
+  background-color: #06D6A0;
+  width: 0.35rem;
+  top: -27.5vh; }
+
+.education-line-notcontainer {
+  height: 55vh;
+  width: 0.35rem;
+  top: -27.5vh; }
+  .education-line-notcontainer div {
+    height: 6.125vh;
+    width: 0.35rem;
+    margin-top: 1.5vh;
+    background-color: gray; }
