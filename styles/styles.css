@@ -408,7 +408,7 @@
   height: 330vh;
   background-color: #06D6A0;
   width: 0.35rem; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .education-itemsline {
       margin-left: 1.575rem; } }
 
@@ -426,17 +426,54 @@
   border: 1px solid #dbd9db; }
 
 .card-icon {
-  height: 4rem; }
+  width: 3.3rem; }
+  @media (min-width: 768px) {
+    .card-icon {
+      width: 3.7rem; } }
+  @media (min-width: 1200px) {
+    .card-icon {
+      width: 4.3rem; } }
+  @media (min-width: 1400px) {
+    .card-icon {
+      width: 5rem; } }
+  @media (min-width: 1920px) {
+    .card-icon {
+      width: 6rem; } }
 
 .card-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   color: #DBD9DB;
   text-align: center; }
+  @media (min-width: 768px) {
+    .card-title {
+      font-size: 1.13rem; } }
+  @media (min-width: 1200px) {
+    .card-title {
+      font-size: 1.33rem; } }
+  @media (min-width: 1400px) {
+    .card-title {
+      font-size: 1.5rem; } }
+  @media (min-width: 1920px) {
+    .card-title {
+      font-size: 2rem;
+      padding: 0.5rem; } }
 
 .card-description {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-align: center;
   color: #EF3E36; }
+  @media (min-width: 768px) {
+    .card-description {
+      font-size: 1.13rem; } }
+  @media (min-width: 1200px) {
+    .card-description {
+      font-size: 1.2rem; } }
+  @media (min-width: 1400px) {
+    .card-description {
+      font-size: 1.4rem; } }
+  @media (min-width: 1920px) {
+    .card-description {
+      font-size: 1.6rem; } }
 
 .education-itemglobe-notfinished {
   border-color: #DBD9DB !important;
@@ -464,7 +501,7 @@
   height: 55vh;
   width: 0.35rem;
   top: -27.5vh; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .education-line-notcontainer {
       margin-left: 1.575rem; } }
   .education-line-notcontainer div {

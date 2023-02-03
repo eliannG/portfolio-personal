@@ -68,19 +68,56 @@
 }
 
 .card-icon {
-    height: 4rem;
+    width: 3.3rem;
+    @include min-768 {
+        width: 3.7rem;
+    }
+    @include min-1200 {
+        width: 4.3rem;
+    }
+    @include min-1400 {
+        width: 5rem;
+    }
+    @include min-1920 {
+        width: 6rem;
+    }
 }
 
 .card-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: $primary-color;
     text-align: center;
+    @include min-768 {
+        font-size: 1.13rem;
+    }
+    @include min-1200 {
+        font-size: 1.33rem;
+    }
+    @include min-1400 {
+        font-size: 1.5rem;
+    }
+    @include min-1920 {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
 }
 
 .card-description {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     text-align: center;
     color: $quaternary-color;
+    @include min-768 {
+        font-size: 1.13rem;
+    }
+    @include min-1200 {
+        font-size: 1.2rem;
+    }
+    @include min-1400 {
+        font-size: 1.4rem;
+    }
+    @include min-1920 {
+        font-size:  1.6rem;
+    }
 }
 
 .education-itemglobe-notfinished {
