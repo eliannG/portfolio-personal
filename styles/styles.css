@@ -1,4 +1,21 @@
+/* Firefox */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #06d6a0 #1f2421; }
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 11px; }
+
+*::-webkit-scrollbar-track {
+  background: #1f2421; }
+
+*::-webkit-scrollbar-thumb {
+  background-color: #06d6a0;
+  border-radius: 45px;
+  border: 3px solid #1f2421; }
+
 .fancy {
   background-color: transparent;
   border: 2px solid #EF3E36;
@@ -392,13 +409,19 @@
   border-color: #06D6A0 !important;
   border-radius: 50%;
   width: 3.5rem;
-  height: 3.5rem; }
+  height: 3.5rem;
+  -webkit-box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+  -moz-box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+  box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5); }
   .education-itemglobe div {
     background-color: #DBD9DB;
     z-index: 5;
     border-radius: 50%;
     width: 1.75rem;
-    height: 1.75rem; }
+    height: 1.75rem;
+    -webkit-box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+    -moz-box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+    box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5); }
 
 .education-itemscontainer {
   height: 55vh;
@@ -423,7 +446,10 @@
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid #dbd9db; }
+  border: 1px solid #dbd9db;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(219, 217, 219, 0.5);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(219, 217, 219, 0.5);
+  box-shadow: 0px 0px 15px 0px rgba(219, 217, 219, 0.5); }
 
 .card-icon {
   width: 3.3rem; }
@@ -443,6 +469,7 @@
 .card-title {
   font-size: 1.2rem;
   color: #DBD9DB;
+  font-family: 'Quicksand', sans-serif;
   text-align: center; }
   @media (min-width: 768px) {
     .card-title {
@@ -460,6 +487,7 @@
 
 .card-description {
   font-size: 1.1rem;
+  font-family: 'Quicksand', sans-serif;
   text-align: center;
   color: #EF3E36; }
   @media (min-width: 768px) {
@@ -476,17 +504,34 @@
       font-size: 1.6rem; } }
 
 .education-itemglobe-notfinished {
+  z-index: 200;
   border-color: #DBD9DB !important;
   border-radius: 50%;
   width: 3.5rem;
   height: 3.5rem;
-  border-style: dashed !important; }
+  border-style: dashed !important;
+  -webkit-box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+  -moz-box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+  box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+  animation: not-finished 10s linear infinite; }
   .education-itemglobe-notfinished div {
     background-color: #DBD9DB;
     z-index: 5;
     border-radius: 50%;
     width: 1.75rem;
-    height: 1.75rem; }
+    height: 1.75rem;
+    -webkit-box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+    -moz-box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5);
+    box-shadow: 0px 0px 49px 9px rgba(0, 109, 105, 0.5); }
+
+.linenot-opacity {
+  opacity: 0; }
+
+@keyframes not-finished {
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 .education-itemscontainer-notfinished {
   filter: grayscale(100%); }
@@ -508,4 +553,5 @@
     height: 6.125vh;
     width: 0.35rem;
     margin-top: 1.5vh;
-    background-color: gray; }
+    background-color: gray;
+    opacity: 0; }
