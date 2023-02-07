@@ -7,7 +7,10 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="../styles/styles.css">  
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600&amp;display=swap" rel="stylesheet">  
 </head>
 <body class="portfolio_bgcolor overflow-y-hidden">
     
@@ -47,12 +50,12 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container portfolio-container">
         <div class="row">
-            <h1>MI PORTFOLIO</h1>
+            <h1 class="portfolio-h1 text-left">MI <span>PORTFOLIO</span></h1>
         </div>
         <div class="row d-flex justify-content-center align-items-center">
-            <div class="col-12 d-flex justify-content-center align-items-center">
+            <div class="col-6 d-flex justify-content-center align-items-center">
                 <div class="portfolio-card position-relative">
                     <div class="portfolio-cardthumbnail position-absolute text-center">
                         <div class="bcoffe-upthumbnail">
@@ -70,6 +73,16 @@
                         <p class="text-center">Projecto realizado en el curso de desarollo web de CoderHouse.</p>
                     </div>
                 </div>
+            </div>
+            <div class="col-6 gray-scale portfolio-card-incomplete">
+              <div class="portfolio-card position-relative">
+                <div class="portfolio-cardthumbnail position-absolute text-center">
+                </div>
+                <div class="portfolio-card-desc1 d-flex flex-column justify-content-center align-items-center position-absolute">
+                  <h4>Sitio Web en desarrollo</h4>
+                  <p>Más sitios llegaran a este portfolio en un futuro.</p>
+                </div>
+              </div>
             </div>
         </div>
     </div>
