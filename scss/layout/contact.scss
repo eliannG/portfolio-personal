@@ -1,0 +1,57 @@
+
+.contact-body_bgcolor {
+    background-color: $tertiary-color;
+}
+
+.social-icon {
+    height: 5rem;
+    width: 5rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.screen-height {
+    min-height: 100vh;
+    h1 {
+        color: $secondary-color;
+        font-weight: 650;
+        font-size: 2.3rem;
+        @include min-768 {
+            font-size: 3.2rem;
+        }
+        @include min-992 {
+            font-size: 2.7rem;
+        }
+        @include min-1200 {
+            font-size: 4rem;
+        }
+        @include min-1920 {
+            font-size: 5.2rem;
+        }
+        span {
+            color: $primary-color;
+        }
+    }
+}
+
+.social-icon-container {
+    border-style: solid;
+    border-color: $primary-color;
+    border: 2px 2px;
+    border-radius: 40px;
+    -webkit-box-shadow:0px 0px 9px 4px rgba(219, 217, 219, 0.212);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(219, 217, 219, 0.212);
+    box-shadow: 0px 0px 9px 4px rgba(219, 217, 219, 0.212);
+}
+
+.contactinfo-container {
+    background-color: #29302c;
+    border-radius: 40px;
+    -webkit-box-shadow:0px 0px 9px 4px rgba(0,109,105,0.9);
+    -moz-box-shadow: 0px 0px 9px 4px rgba(0,109,105,0.9);
+    box-shadow: 0px 0px 9px 4px rgba(0,109,105,0.9);
+    p {
+        font-family: 'Quicksand', sans-serif;
+        color: $primary-color;
+    }
+}

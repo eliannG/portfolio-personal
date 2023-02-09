@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="../styles/styles.css">
 </head>
-<body>
+<body class="contact-body_bgcolor">
     
     <nav class="navbar bg-transparent navbar-dark fixed-top nav-custom">
         <div class="container-fluid justify-content-end">
@@ -33,10 +36,10 @@
                   <a class="nav-link" href="#">Servicios</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="./portfolio.html">Portfolio</a>
+                  <a class="nav-link" href="./portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Contacto</a>
+                  <a class="nav-link active" href="#">Contacto</a>
                 </li>
               </ul>
             </div>
@@ -44,5 +47,33 @@
         </div>
     </nav>
 
+    <div class="container screen-height d-flex flex-column justify-content-center align-items-center">
+      <div class="row">
+        <h1 class="text-center">CON<span>TACTO</span></h1>
+      </div>
+      <div class="row">
+        <div class="col-3 d-flex flex-column align-items-center justify-content-center">
+          <div class="social-icon-container d-flex flex-column align-items-center justify-content-center px-3">
+            <a href="www.linkedin.com/in/elian-gonzalo"><img src="../img/linkedin-svgrepo-com.svg" alt="Linkedin" class="social-icon"></a>
+            <a href="https://github.com/Elianaaak?tab=repositories"><img src="../img/github-svgrepo-com.svg" alt="Github" class="social-icon"></a>
+            <a href="https://api.whatsapp.com/send/?phone=01154558098&text=Hola!%20Tengo%20una%20consulta%20acerca%20de...%20"><img src="../img/whatsapp-svgrepo-com.svg" alt="Whatsapp" class="social-icon"></a>            
+          </div>
+
+        </div>
+        <div class="col-9 d-flex justify-content-center align-items-center">
+          <div class="contactinfo-container p-4">
+            <p>Mail: <span>contacto@eliangonzalo.com</span></p>
+            <p>Celular: <span>+54 9 11 5455-8098</span></p>
+            <p>Su consulta no molesta. Si tiene una duda acerca de un sevicio en particular, no dude en consultar, preferentemente a través de Whatsapp, ingresando en el ícono <span class="desktop">a su izquierda.</span><span class="mobile">en la parte inferior.</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
