@@ -704,9 +704,11 @@
 
 .social-icon {
   height: 5rem;
-  width: 5rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem; }
+  width: 5rem; }
+  @media (min-width: 1920px) {
+    .social-icon {
+      height: 6.5rem;
+      width: 6.5rem; } }
 
 .screen-height {
   min-height: 100vh; }
@@ -719,7 +721,7 @@
         font-size: 3.2rem; } }
     @media (min-width: 992px) {
       .screen-height h1 {
-        font-size: 2.7rem; } }
+        font-size: 4rem; } }
     @media (min-width: 1200px) {
       .screen-height h1 {
         font-size: 4rem; } }
@@ -747,3 +749,9 @@
   .contactinfo-container p {
     font-family: 'Quicksand', sans-serif;
     color: #dbd9db; }
+    @media (min-width: 1400px) {
+      .contactinfo-container p {
+        font-size: 1.4rem; } }
+    @media (min-width: 1920px) {
+      .contactinfo-container p {
+        font-size: 1.55rem; } }
