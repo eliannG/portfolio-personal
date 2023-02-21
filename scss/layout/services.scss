@@ -40,6 +40,8 @@
 
 .services-row_custom {
     min-height: 100vh;
+    z-index: 200;
+    background-color: $tertiary-color;
 }
 
 .services-col_custom-2 {
@@ -49,12 +51,26 @@
 
 .bg-bars {
     height: 100vh;
-    width: 20vw;
+    width: calc((100vw - 1140px) / 2);
     background-color: $primary-color;
     z-index: -3;
 }
 
-.modal-services1 {
+.services-popup-container {
     top: 0;
     left: 0;
+    height: 100vh;
+    width: calc(((100vw - 1140px) / 2) + 380px);
+    background: rgba(219, 217, 219, 0.19);
+    backdrop-filter: blur(6.9px);
+    -webkit-backdrop-filter: blur(6.9px);
+    padding-top: 70px !important;
+    z-index: 5;
+    margin-left: calc(((100vw - 1140px) / 2) + 381px);
+    transition: all ease 0.70s;
+    &:target {
+        transition:all ease 0.70s;
+        margin-left: 0;
+    }
 }
+
