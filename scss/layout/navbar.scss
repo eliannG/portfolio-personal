@@ -8,17 +8,10 @@
 .offcanvas-custom {
     width: 100vw !important;
     transition: all ease 0.4s !important;
-    .offcanvas-body {
-        background: rgba(0, 0, 0, 0) !important;
-        backdrop-filter: blur(16.7px) !important;
-        -webkit-backdrop-filter: blur(16.7px) !important;
-    }
-    .offcanvas-header {
-        background: rgba(0, 0, 0, 0) !important;
-        backdrop-filter: blur(16.7px) !important;
-        -webkit-backdrop-filter: blur(16.7px) !important;
-    }
-
+    // background: rgba(0, 0, 0, 0) !important;
+    // backdrop-filter: blur(16.7px) !important;
+    // -webkit-backdrop-filter: blur(16.7px) !important;
+    background: $primary-color !important;
 }
 
 .canvas-btn-custom {
@@ -29,6 +22,32 @@
 
 .nav-link {
     font-size: 2rem !important;
+    @include min-1400 {
+        font-size: 2.7rem !important;
+    }
+    font-family: 'Quicksand', sans-serif !important;
+    opacity: 0.7 !important; 
+    color: #1F2421 !important;
+    &:hover {
+        opacity: 0.917 !important;
+    }
+}
+
+.offcanvas-title {
+    font-family: 'Sacramento', cursive !important;
+    font-size: 1.8rem;
+    @include min-768 {
+        font-size: 2.5rem;
+    }
+    @include min-1920 {
+        font-size: 3.5rem;
+    }
+
+}
+
+.active {
+    color: #000000 !important;
+    opacity: 1 !important;
 }
 
 .navbar-toggler-icon {
@@ -48,3 +67,14 @@
     --bs-btn-close-focus-shadow: 0 !important;
 }
 
+.offcanvas-backdrop {
+    background-color: transparent !important;
+}
+
+.offcanvas-backdrop.show {
+    opacity: 0 !important;
+}
+
+.offcanvas-backdrop.fade {
+    opacity: 0 !important;
+}

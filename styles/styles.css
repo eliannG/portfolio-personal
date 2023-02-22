@@ -1,5 +1,7 @@
 /* Firefox */
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Mono+One&family=Sacramento&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Flamenco&family=Quicksand:wght@500&family=Rubik+Mono+One&family=Sacramento&display=swap" rel="stylesheet');
 * {
   scrollbar-width: auto;
   scrollbar-color: #06d6a0 #1f2421; }
@@ -118,15 +120,8 @@
 
 .offcanvas-custom {
   width: 100vw !important;
-  transition: all ease 0.4s !important; }
-  .offcanvas-custom .offcanvas-body {
-    background: rgba(0, 0, 0, 0) !important;
-    backdrop-filter: blur(16.7px) !important;
-    -webkit-backdrop-filter: blur(16.7px) !important; }
-  .offcanvas-custom .offcanvas-header {
-    background: rgba(0, 0, 0, 0) !important;
-    backdrop-filter: blur(16.7px) !important;
-    -webkit-backdrop-filter: blur(16.7px) !important; }
+  transition: all ease 0.4s !important;
+  background: #dbd9db !important; }
 
 .canvas-btn-custom {
   border: 0 !important;
@@ -134,7 +129,29 @@
   color: transparent !important; }
 
 .nav-link {
-  font-size: 2rem !important; }
+  font-size: 2rem !important;
+  font-family: 'Quicksand', sans-serif !important;
+  opacity: 0.7 !important;
+  color: #1F2421 !important; }
+  @media (min-width: 1400px) {
+    .nav-link {
+      font-size: 2.7rem !important; } }
+  .nav-link:hover {
+    opacity: 0.917 !important; }
+
+.offcanvas-title {
+  font-family: 'Sacramento', cursive !important;
+  font-size: 1.8rem; }
+  @media (min-width: 768px) {
+    .offcanvas-title {
+      font-size: 2.5rem; } }
+  @media (min-width: 1920px) {
+    .offcanvas-title {
+      font-size: 3.5rem; } }
+
+.active {
+  color: #000000 !important;
+  opacity: 1 !important; }
 
 .navbar-toggler-icon {
   width: 2.3em !important;
@@ -150,6 +167,15 @@
   background-size: 100% !important;
   border: none !important;
   --bs-btn-close-focus-shadow: 0 !important; }
+
+.offcanvas-backdrop {
+  background-color: transparent !important; }
+
+.offcanvas-backdrop.show {
+  opacity: 0 !important; }
+
+.offcanvas-backdrop.fade {
+  opacity: 0 !important; }
 
 .inicio {
   height: 100vh;
