@@ -177,6 +177,195 @@
 .offcanvas-backdrop.fade {
   opacity: 0 !important; }
 
+.loader {
+  width: 6em;
+  height: 6em;
+  font-size: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.loader .face {
+  position: absolute;
+  border-radius: 50%;
+  border-style: solid;
+  animation: animate023845 3s linear infinite; }
+
+.loader .face:nth-child(1) {
+  width: 100%;
+  height: 100%;
+  color: white;
+  border-color: currentColor transparent transparent currentColor;
+  border-width: 0.2em 0.2em 0em 0em;
+  --deg: -45deg;
+  animation-direction: normal; }
+
+.loader .face:nth-child(2) {
+  width: 70%;
+  height: 70%;
+  color: white;
+  border-color: currentColor currentColor transparent transparent;
+  border-width: 0.2em 0em 0em 0.2em;
+  --deg: -135deg;
+  animation-direction: reverse; }
+
+.loader .face .circle {
+  position: absolute;
+  width: 50%;
+  height: 0.1em;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  transform: rotate(var(--deg));
+  transform-origin: left; }
+
+.loader .face .circle::before {
+  position: absolute;
+  top: -0.5em;
+  right: -0.5em;
+  content: '';
+  width: 1em;
+  height: 1em;
+  background-color: currentColor;
+  border-radius: 50%;
+  box-shadow: 0 0 2em, 0 0 4em, 0 0 6em, 0 0 8em, 0 0 10em, 0 0 0 0.5em rgba(255, 255, 0, 0.1); }
+
+@keyframes animate023845 {
+  to {
+    transform: rotate(1turn); } }
+
+.bienvenida-inicio {
+  display: none;
+  animation: bienvenida-inicio 2s linear 42s;
+  animation-fill-mode: forwards; }
+  @media (min-width: 1200px) {
+    .bienvenida-inicio {
+      display: flex;
+      background-color: black;
+      height: 100vh;
+      width: 100vw;
+      z-index: 9999; }
+      .bienvenida-inicio img {
+        height: 4rem;
+        opacity: 0;
+        animation: binicio-img 13s linear 4s;
+        animation-fill-mode: forwards; }
+      .bienvenida-inicio .inicio-pant0 p {
+        font-family: 'Quicksand', sans-serif;
+        color: #dbd9db;
+        font-size: 1.25rem;
+        opacity: 0;
+        animation: binicio-p 9s linear 6s;
+        animation-fill-mode: forwards; } }
+  .bienvenida-inicio .inicio-pant1 {
+    opacity: 0;
+    animation: binicio-pant 3.9s linear 18.8s;
+    animation-fill-mode: forwards; }
+    .bienvenida-inicio .inicio-pant1 h3 {
+      color: #dbd9db;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 5rem; }
+      @media (min-width: 576px) {
+        .bienvenida-inicio .inicio-pant1 h3 {
+          font-size: 6.3rem; } }
+      @media (min-width: 1550px) {
+        .bienvenida-inicio .inicio-pant1 h3 {
+          font-size: 10.5rem; } }
+  .bienvenida-inicio .inicio-pant2 {
+    opacity: 0;
+    animation: binicio-pant 3.9s linear 23.4s;
+    animation-fill-mode: forwards; }
+    .bienvenida-inicio .inicio-pant2 h4 {
+      color: #dbd9db;
+      font-family: 'Quicksand', sans-serif;
+      font-size: 5rem;
+      font-weight: light; }
+      @media (min-width: 576px) {
+        .bienvenida-inicio .inicio-pant2 h4 {
+          font-size: 6.3rem; } }
+      @media (min-width: 1550px) {
+        .bienvenida-inicio .inicio-pant2 h4 {
+          font-size: 10.5rem; } }
+  .bienvenida-inicio .inicio-pant3 {
+    opacity: 0;
+    animation: binicio-pant 8s linear 28s;
+    animation-fill-mode: forwards; }
+    .bienvenida-inicio .inicio-pant3 h2 .blink-effect {
+      display: block;
+      color: #dbd9db;
+      font-family: monospace;
+      white-space: nowrap;
+      border-right: 4px solid;
+      width: 57ch;
+      animation: typing 4s steps(57), blink 0.4s infinite step-end alternate;
+      animation-delay: 27.5s;
+      overflow: hidden; }
+  .bienvenida-inicio .inicio-pant4 p {
+    font-family: 'Quicksand', sans-serif;
+    color: #dbd9db;
+    font-size: 1.25rem;
+    opacity: 0;
+    animation: binicio-pant 5s linear 37s;
+    animation-fill-mode: forwards; }
+
+@keyframes binicio-img {
+  0% {
+    opacity: 0; }
+  7% {
+    opacity: 1; }
+  93% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    z-index: -40; } }
+
+@keyframes binicio-p {
+  0% {
+    opacity: 0; }
+  11% {
+    opacity: 1; }
+  89% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    z-index: -40; } }
+
+@keyframes binicio-pant {
+  0% {
+    opacity: 0; }
+  17% {
+    opacity: 1; }
+  83% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    z-index: -40; } }
+
+@keyframes bienvenida-inicio {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  99% {
+    opacity: 0; }
+  100% {
+    z-index: -50; } }
+
+.bienvenida-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.bienvenida-loader {
+  bottom: 0;
+  right: 0;
+  margin-bottom: 2rem;
+  margin-right: 2rem; }
+
 .inicio {
   height: 100vh;
   position: relative;
