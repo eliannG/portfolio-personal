@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="../styles/styles.css">    
 </head>
-<body class="about-body_bgcolor overflow-x-hidden">
+<body class="about-body_bgcolor overflow-x-hidden position-relative">
 
   <nav class="navbar bg-transparent navbar-dark fixed-top nav-custom">
     <div class="container-fluid justify-content-end">
@@ -47,9 +47,23 @@
     </div>
   </nav>
 
+  <div class="bienvenida-generic position-fixed" id="onload2">
+    <div class="babout-container position-relative d-flex align-items-center justify-content-center">
+      <h3 class="h1-generic text-center position-relative"><span class="sabout1">ACERCA </span><span class="sabout2">DE MÍ</span><div class="subray position-absolute"></div></h1>
+      <span class="loader position-absolute end-0 bottom-0">
+        <div class="face">
+            <div class="circle"></div>
+        </div>
+        <div class="face">
+            <div class="circle"></div>
+        </div>
+      </span>
+    </div>
+  </div>
+
     <div class="container about-container d-flex justify-content-center align-items-center flex-column gap-4 gap-xxl-5">
           <div class="row text-center">
-            <h1 class="h1-about mt-5 pt-3 pt-lg-0 mt-lg-0"><span>ACERCA</span> DE MÍ</h1>
+            <h1 class="h1-about2 mt-5 pt-3 pt-lg-0 mt-lg-0"><span>ACERCA</span> DE MÍ</h1>
           </div>
           <div class="row">
             <div class="col-12 col-lg-6">
@@ -62,7 +76,7 @@
                       <p class="about-p-me_font about-p">Fecha de nacimiento: <span>05/10/2005</span></p>
                       <p class="about-p-me_font about-p">En busca de: <span>Experiencia laboral / Freelancer disponible</span></p>
                       <p class="about-p-me_font about-p">E-mail: contacto@eliangonzalo.com</p>
-                      <a class="fancy" href="#">
+                      <a class="fancy" href="../download/CV-Elián-Gonzalo.pdf" download="CV de Elián Alejandro Gonzalo.pdf">
                         <span class="top-key"></span>
                         <span class="text text-center">Descarcar CV</span>
                         <span class="bottom-key-1"></span>
@@ -92,7 +106,7 @@
                 <div class="col-12 position-relative p-3 text-center">
                   <div class="border-start border-top border-2 position-absolute skills-border top-0 start-0"></div>
                   <div class="border-end border-bottom border-2 position-absolute skills-border bottom-0 end-0"></div>
-                  <p class="mb-0 about-p about-p-desc_font">Tengo el objetivo, como mencioné, de tener una formación constante en el rubro, por lo que pretendo por consiguiente hacer crecer mis conocimientos en cuanto a lenguajes de programación, por lo que se irán reflejando en el apartado superior. Esto nunca es el final, siempre es el comienzo.</p>
+                  <p class="mb-0 about-p about-p-desc_font">Tengo el objetivo, como mencioné, de tener una formación constante en el rubro, por lo que pretendo por consiguiente hacer crecer mis conocimientos en cuanto a lenguajes de programación, por lo que se irán reflejando en el apartado superior.</p>
                 </div>               
               </div>
             </div>
@@ -104,5 +118,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>
