@@ -279,3 +279,55 @@
     animation: span-generic 0.1s linear 2.8s forwards;
     color: $primary-color;
 }
+
+.services-botline {
+    height: 2.5rem;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 23px 1px rgba(0,0,0,0.75);
+    background-color: $primary-color;
+    opacity: 0;
+}
+
+.services-botline1 {
+    animation: bservices-pops 0.3s linear 3.1s forwards;
+}
+
+.services-botline2 {
+    animation: bservices-pops 0.3s linear 3.4s forwards;
+}
+
+.services-botline3 {
+    animation: bservices-pops 0.3s linear 3.7s forwards;
+}
+
+.services-botline4 {
+    animation: bservices-pops 0.3s linear 4s forwards;
+}
+
+.services-botline5 {
+    animation: bservices-pops 0.3s linear 4.3s forwards;
+}
+
+.services-botline6 {
+    animation: bservices-pops 0.3s linear 4.6s forwards;
+}
+
+@keyframes bservices-pops {
+    0% {
+        opacity: 0;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 1;
+    }
+    55% {
+        transform: scale(1.15);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

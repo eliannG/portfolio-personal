@@ -11,7 +11,28 @@ window.onload = function() {
         $('.education-body').css('overflow-y', 'visible')
         $('.about-body_bgcolor').css('overflow-y', 'visible')
     }, 4700) 
+    setTimeout(function() {
+        $('#onload3').fadeOut();
+        $('.services-bgcolor').css('overflow-y', 'visible')
+    }, 6300) 
 };
 
+function popup1 () {
+    $('.service-icon1').css('background-color', '#06D6A0')    
+}
 
-
+function popup2 () {
+    $('.service-icon2').css('background-color', '#06D6A0')    
+}
+function popup3 () {
+    $('.service-icon3').css('background-color', '#06D6A0')    
+}
+function popup4 () {
+    $('.service-icon4').css('background-color', '#06D6A0')    
+}
+function popup5 () {
+    $('.service-icon5').css('background-color', '#06D6A0')    
+}
+function popup6 () {
+    $('.service-icon6').css('background-color', '#06D6A0')    
+}

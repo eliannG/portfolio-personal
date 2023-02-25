@@ -50,6 +50,28 @@
         </div>
     </nav>
 
+    <div class="bienvenida-generic position-fixed" id="onload3">
+      <div class="babout-container position-relative d-flex align-items-center justify-content-center flex-column">
+        <h3 class="h1-generic text-center position-relative"><span class="sabout1">SER</span><span class="sabout2">VICIOS</span></h3>
+        <div class="d-flex justify-content-center align-items-center flex-row">
+          <img src="../img/service1.svg" class="services-botline services-botline1 mx-1">
+          <img src="../img/service2.svg" class="services-botline services-botline2 mx-1">
+          <img src="../img/service3.svg" class="services-botline services-botline3 mx-1">
+          <img src="../img/service4.svg" class="services-botline services-botline4 mx-1">
+          <img src="../img/service5.svg" class="services-botline services-botline5 mx-1">
+          <img src="../img/service6.svg" class="services-botline services-botline6 mx-1">
+        </div>
+        <span class="loader position-absolute end-0 bottom-0">
+          <div class="face">
+              <div class="circle"></div>
+          </div>
+          <div class="face">
+              <div class="circle"></div>
+          </div>
+        </span>
+      </div>
+    </div>
+
     <div class="bg-bars position-absolute"></div>
 
     <div id="service-backpopup" class="position-absolute"></div>
@@ -192,22 +214,22 @@
         <div class="col-12 col-md-7 col-xl-8 services-col_custom d-flex justify-content-center align-items-center">
           <div class="row services-row_custom2 d-flex justify-content-center align-items-center">    
             <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <a href="#popup-1"><img src="../img/bulb-idea-light-svgrepo-com (1).svg" alt="" class="service-icon"></a>
+              <a href="#popup-1"><img src="../img/service1.svg" alt="" class="service-icon service-icon1" id="design" onclick="popup1()"></a>
             </div>
             <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <a href="#popup-2"><img src="../img/code-svgrepo-com (1).svg" alt="" class="service-icon"></a>
+              <a href="#popup-2"><img src="../img/service2.svg" alt="" class="service-icon service-icon2" id="code" onclick="popup2()"></a>
             </div>
             <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <a href="#popup-3"><img src="../img/upload-svgrepo-com (2).svg" alt="" class="service-icon"></a>
+              <a href="#popup-3"><img src="../img/service3.svg" alt="" class="service-icon service-icon3" id="host" onclick="popup3()"></a>
             </div>
             <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <a href="#popup-4"><img src="../img/rule-svgrepo-com (3).svg" alt="" class="service-icon"></a>
+              <a href="#popup-4"><img src="../img/service4.svg" alt="" class="service-icon service-icon4" id="mant" onclick="popup4()"></a>
             </div>
             <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <a href="#popup-5"><img src="../img/help-svgrepo-com (1).svg" alt="" class="service-icon"></a>
+              <a href="#popup-5"><img src="../img/service5.svg" alt="" class="service-icon service-icon5" id="help" onclick="popup5()"></a>
             </div>
             <div class="col-6 col-md-4 d-flex justify-content-center align-items-center">
-              <a href="#popup-6"><img src="../img/drone-svgrepo-com (1).svg" alt="" class="service-icon"></a>
+              <a href="#popup-6"><img src="../img/service6.svg" alt="" class="service-icon service-icon6" id="drone" onclick="popup6()"></a>
             </div>
           </div>
         </div>
@@ -220,6 +242,7 @@
       AOS.init();
     </script>
     <script type="text/javascript" src="https://cssbud.com/wp-content/themes/h-code/assets/js/page-scroll.js?ver=1.4.9" id="hcode-page-scroll-js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>    
+    <script src="../js/main.js"></script>
 </body>
 </html>
