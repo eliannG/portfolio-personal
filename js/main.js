@@ -15,6 +15,10 @@ window.onload = function() {
         $('#onload3').fadeOut();
         $('.services-bgcolor').css('overflow-y', 'visible')
     }, 6300) 
+    setTimeout(function() {
+        $('#onload4').fadeOut();
+        $('.services-bgcolor').css('overflow-y', 'visible')
+    }, 12000) 
 };
 
 function popup1 () {

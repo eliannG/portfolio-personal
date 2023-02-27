@@ -331,3 +331,348 @@
         opacity: 1;
     }
 }
+
+
+// BIENVENIDA PORTFOLIO
+
+.loading-card {
+    height: 450px;
+    width: 450px;
+    border-radius: 0px 0px 40px 40px;
+
+    .loading-botcard{
+        width: 100%;
+        height: 40%;
+        border-radius: 0px 0px 40px 40px;
+        bottom: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    .botcard-lines {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px 0px 40px 40px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .botcard-startline{
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        border-radius: 0px 0px 40px 40px;
+        border-left-color: $secondary-color;
+        border-left-width: 5px;
+        border-left-style: solid;
+        animation: bot-xtline 1.5s ease 4s forwards;
+
+        @keyframes bot-xline {
+            0% {
+                height: 0;
+                opacity: 0;
+                border-radius: 0px 0px 0px 0px;
+            }
+            5% {
+                opacity: 1;
+            }
+            37% {
+                border-radius: 0px;
+            }
+            100% {
+                height: 100%;
+                opacity: 1;
+                border-radius: 0px 0px 40px 40px;
+            }
+        }
+
+    }
+
+    .botcard-endline{
+        width: 100%;
+        height: 0;
+        opacity: 0;
+        border-radius: 0px 0px 40px 40px;
+        border-right-color: $secondary-color;
+        border-right-width: 5px;
+        border-right-style: solid;
+        animation: bot-xline 1.5s ease 4s forwards;
+
+        @keyframes bot-xtline {
+            0% {
+                height: 0;
+                opacity: 0;
+                border-radius: 0px 0px 0px 0px;
+            }
+            5% {
+                opacity: 1;
+            }
+            37% {
+                border-radius: 0px;
+            }
+            100% {
+                height: 100%;
+                opacity: 1;
+                border-radius: 0px 0px 40px 40px;
+            }
+        }
+    }
+
+    .botcard-botline {
+        height: 100%;
+        width: 0;
+        opacity: 0;
+        background-color: $tertiary-color;
+        border-radius: 0px 0px 40px 40px;
+        border-bottom-color: $secondary-color;
+        border-bottom-width: 2px;
+        border-style: solid;
+        animation: bot-botline 1.5s ease 2.5s forwards;
+
+        @keyframes bot-botline {
+            0% {
+                width: 0;
+                opacity: 0;
+            }
+            5% {
+                opacity: 1;
+            }
+            100% {
+                height: 100%;
+                width: 100%;
+                opacity: 1;
+            }
+        }
+    }
+
+    .loading-topcard {
+        height: 60%;
+        width: 100%;
+        top: 0;
+        .topcard-lines {
+            height: 100%;
+            width: 100%;
+            .topcard-botline{
+                bottom: 0;
+                height: 5px;
+                width: 0;
+                background-color: $secondary-color;
+                animation: top-botline 1.5s ease 4.25s forwards;
+
+                @keyframes top-botline {
+                    from {
+                        width: 0;
+                    }
+                    to {
+                        width: 100%;
+                    }
+                }
+            }
+            .topcard-startline {
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                width: 4px;
+                .dash-line {
+                    width: 100%;
+                    height: 0;
+                    background-color: $primary-color;
+                    margin-bottom: 1rem;
+                }
+                .dash-line1 {
+                    animation: dashlineY 0.175s linear 5.7s forwards;
+                }
+                .dash-line2 {
+                    animation: dashlineY 0.175s linear 5.925s forwards;
+                }
+                .dash-line3 {
+                    animation: dashlineY 0.175s linear 6.15s forwards;
+                }
+                .dash-line4 {
+                    animation: dashlineY 0.175s linear 6.375s forwards;
+                }
+                .dash-line5 {
+                    animation: dashlineY 0.175s linear 6.6s forwards;
+                }
+                .dash-line6 {
+                    animation: dashlineY 0.175s linear 6.825s forwards;
+                }                
+            }
+            .topcard-endline {
+                right: 0;
+                height: 100%;
+                width: 4px;
+                .dash-line {
+                    width: 100%;
+                    height: 0;
+                    background-color: $primary-color;
+                    margin-bottom: 1rem;
+                }
+                .dash-line17 {
+                    animation: dashlineY 0.175s linear 5.7s forwards;
+                }
+                .dash-line18 {
+                    animation: dashlineY 0.175s linear 5.925s forwards;
+                }
+                .dash-line19 {
+                    animation: dashlineY 0.175s linear 6.15s forwards;
+                }
+                .dash-line20 {
+                    animation: dashlineY 0.175s linear 6.375s forwards;
+                }
+                .dash-line21 {
+                    animation: dashlineY 0.175s linear 6.6s forwards;
+                }
+                .dash-line22 {
+                    animation: dashlineY 0.175s linear 6.825s forwards;
+                }            
+            }
+            .topcard-topline {
+                top: 0;
+                height: 4px;
+                width: 100%;
+                .dash-line {
+                    width: 0;
+                    height: 100%;
+                    background-color: $primary-color;
+                }
+                .dash-lineB {
+                    width: 0;
+                    height: 100%;
+                    background-color: $primary-color;
+                    margin-left: 1.2rem;
+                }
+                .dash-line7 {
+                    animation: dashlineX 0.1125s linear 5.7s forwards;
+                }
+                .dash-line8 {
+                    animation: dashlineX 0.1125s linear 5.8125s forwards;
+                }
+                .dash-line9 {
+                    animation: dashlineX 0.1125s linear 5.925s forwards;
+                }
+                .dash-line10 {
+                    animation: dashlineX 0.1125s linear 6.0375s forwards;
+                }
+                .dash-line11 {
+                    animation: dashlineX 0.1125s linear 6.15s forwards;
+                }
+                .dash-line12 {
+                    animation: dashlineX 0.1125s linear 6.2625s forwards;
+                } 
+                .dash-line13 {
+                    animation: dashlineX 0.1125s linear 6.375s forwards;
+                }
+                .dash-line14 {
+                    animation: dashlineX 0.1125s linear 6.4875s forwards;
+                }
+                .dash-line15 {
+                    animation: dashlineX 0.1125s linear 6.6s forwards;
+                }
+                .dash-line16 {
+                    animation: dashlineX 0.1125s linear 6.825s forwards;
+                }      
+            }
+        }
+    }
+    transform: scale(0.6);
+    animation: loading-portfolio 0.8s ease 7.25s forwards;
+    @keyframes loading-portfolio {
+        from {
+            transform: scale(0.6);
+        }
+        to {
+            transform: scale(1);
+        }
+    }
+
+}
+
+.h1-bportfolio1 {
+    color: $secondary-color !important; 
+    opacity: 0;
+    animation: h1-generic 0.1s linear 8.95s forwards;
+    font-size: 3rem;
+}
+
+.h1-bportfolio2 {
+    opacity: 0;
+    animation: span-generic 0.1s linear 9.75s forwards;
+    font-size: 3rem;
+}
+
+@keyframes dashlineY {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 29px;
+    }
+}
+
+@keyframes dashlineX {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 27.73px;
+    }
+    
+}
+
+.topcard-example-container {
+    height: 80%;
+    width: 80%;
+    border-color: $primary-color;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    .topcard-example {
+        height: 100%;
+        width: 100%;
+        .example-line-container {
+            height: 150%;
+            width: 150%;
+        }
+    }
+    opacity: 0;
+    animation: example-container 0.7s ease 7.45s forwards;
+    @keyframes example-container {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+}
+
+.example-line-container2 {
+    height: 100%;
+    width: 100%;
+}
+
+.example-line1 {
+    background-color: $primary-color;
+    height: 0;
+    width: 2px;
+    transform: rotate(60deg);
+    animation: example-line 0.7s ease 8.15s forwards;
+}
+
+.example-line2 {
+    background-color: $primary-color;
+    height: 0;
+    width: 2px;
+    transform: rotate(-60deg);
+    animation: example-line 0.7s ease 8.15s forwards;
+}
+
+@keyframes example-line {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 100%;
+    }
+}
