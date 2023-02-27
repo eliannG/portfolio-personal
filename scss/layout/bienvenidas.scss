@@ -576,13 +576,49 @@
         }
     }
     transform: scale(0.6);
+    @include min-1550 {
+        transform: scale(0.85);
+    }
+    @include min-1920 {
+        transform: scale(1.2);
+    }
     animation: loading-portfolio 0.8s ease 7.25s forwards;
     @keyframes loading-portfolio {
         from {
             transform: scale(0.6);
         }
         to {
-            transform: scale(1);
+            transform: scale(0.8);
+        }
+    }
+    @include min-576 {
+        @keyframes loading-portfolio {
+            from {
+                transform: scale(0.6);
+            }
+            to {
+                transform: scale(1);
+            }
+        }
+    }
+    @include min-1550 {
+        @keyframes loading-portfolio {
+            from {
+                transform: scale(0.85);
+            }
+            to {
+                transform: scale(1.4);
+            }            
+        }
+    }
+    @include min-1920 {
+        @keyframes loading-portfolio {
+            from {
+                transform: scale(1.2);
+            }
+            to {
+                transform: scale(1.6);
+            }
         }
     }
 
@@ -592,13 +628,22 @@
     color: $secondary-color !important; 
     opacity: 0;
     animation: h1-generic 0.1s linear 8.95s forwards;
-    font-size: 3rem;
+    font-weight: 650;
+    font-size: 2.3rem;
+    @include min-576 {
+        font-size: 3rem;
+    }
 }
 
 .h1-bportfolio2 {
     opacity: 0;
     animation: span-generic 0.1s linear 9.75s forwards;
-    font-size: 3rem;
+    font-weight: 650;
+    font-size: 2.3rem;
+    color: $primary-color;
+    @include min-576 {
+        font-size: 3rem;
+    }
 }
 
 @keyframes dashlineY {
@@ -656,7 +701,10 @@
     background-color: $primary-color;
     height: 0;
     width: 2px;
-    transform: rotate(60deg);
+    transform: rotate(50deg);
+    @include min-576 {
+        transform: rotate(60deg);
+    }
     animation: example-line 0.7s ease 8.15s forwards;
 }
 
@@ -664,7 +712,10 @@
     background-color: $primary-color;
     height: 0;
     width: 2px;
-    transform: rotate(-60deg);
+    transform: rotate(-50deg);
+    @include min-576 {
+        transform: rotate(-60deg);
+    }
     animation: example-line 0.7s ease 8.15s forwards;
 }
 
@@ -673,6 +724,17 @@
         height: 0;
     }
     100% {
-        height: 100%;
+        height: 80%;
+    }
+}
+
+@include min-576 {
+    @keyframes example-line {
+        0% {
+            height: 0;
+        }
+        100% {
+            height: 100%;
+        }
     }
 }

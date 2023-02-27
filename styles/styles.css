@@ -676,23 +676,56 @@
           animation: dashlineX 0.1125s linear 6.6s forwards; }
         .loading-card .loading-topcard .topcard-lines .topcard-topline .dash-line16 {
           animation: dashlineX 0.1125s linear 6.825s forwards; }
+  @media (min-width: 1550px) {
+    .loading-card {
+      transform: scale(0.85); } }
+  @media (min-width: 1920px) {
+    .loading-card {
+      transform: scale(1.2); } }
 
 @keyframes loading-portfolio {
   from {
     transform: scale(0.6); }
   to {
-    transform: scale(1); } }
+    transform: scale(0.8); } }
+  @media (min-width: 576px) {
+    @keyframes loading-portfolio {
+      from {
+        transform: scale(0.6); }
+      to {
+        transform: scale(1); } } }
+  @media (min-width: 1550px) {
+    @keyframes loading-portfolio {
+      from {
+        transform: scale(0.85); }
+      to {
+        transform: scale(1.4); } } }
+  @media (min-width: 1920px) {
+    @keyframes loading-portfolio {
+      from {
+        transform: scale(1.2); }
+      to {
+        transform: scale(1.6); } } }
 
 .h1-bportfolio1 {
   color: #06D6A0 !important;
   opacity: 0;
   animation: h1-generic 0.1s linear 8.95s forwards;
-  font-size: 3rem; }
+  font-weight: 650;
+  font-size: 2.3rem; }
+  @media (min-width: 576px) {
+    .h1-bportfolio1 {
+      font-size: 3rem; } }
 
 .h1-bportfolio2 {
   opacity: 0;
   animation: span-generic 0.1s linear 9.75s forwards;
-  font-size: 3rem; }
+  font-weight: 650;
+  font-size: 2.3rem;
+  color: #dbd9db; }
+  @media (min-width: 576px) {
+    .h1-bportfolio2 {
+      font-size: 3rem; } }
 
 @keyframes dashlineY {
   0% {
@@ -736,21 +769,34 @@
   background-color: #dbd9db;
   height: 0;
   width: 2px;
-  transform: rotate(60deg);
+  transform: rotate(50deg);
   animation: example-line 0.7s ease 8.15s forwards; }
+  @media (min-width: 576px) {
+    .example-line1 {
+      transform: rotate(60deg); } }
 
 .example-line2 {
   background-color: #dbd9db;
   height: 0;
   width: 2px;
-  transform: rotate(-60deg);
+  transform: rotate(-50deg);
   animation: example-line 0.7s ease 8.15s forwards; }
+  @media (min-width: 576px) {
+    .example-line2 {
+      transform: rotate(-60deg); } }
 
 @keyframes example-line {
   0% {
     height: 0; }
   100% {
-    height: 100%; } }
+    height: 80%; } }
+
+@media (min-width: 576px) {
+  @keyframes example-line {
+    0% {
+      height: 0; }
+    100% {
+      height: 100%; } } }
 
 .inicio {
   height: 100vh;
@@ -1189,7 +1235,8 @@
     transform: translateY(20px); } }
 
 .portfolio_bgcolor {
-  background-color: #1F2421; }
+  background-color: #1F2421;
+  overflow-y: hidden; }
   @media (min-width: 992px) {
     .portfolio_bgcolor {
       overflow-y: hidden; } }
@@ -1245,12 +1292,12 @@
       width: 450px; } }
   @media (min-width: 1400px) {
     .portfolio-card {
-      height: 600px;
-      width: 600px; } }
+      height: 525px !important;
+      width: 525px !important; } }
   @media (min-width: 1920px) {
     .portfolio-card {
-      height: 650px;
-      width: 650px; } }
+      height: 525px !important;
+      width: 525px !important; } }
 
 .portfolio-card-desc1 {
   background-color: #1F2421;

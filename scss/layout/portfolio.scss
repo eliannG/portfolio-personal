@@ -1,6 +1,7 @@
 
 .portfolio_bgcolor {
     background-color: $tertiary-color;
+    overflow-y: hidden;
     @include min-992 {
         overflow-y: hidden;
     }
@@ -62,12 +63,12 @@
         width: 450px;
     }
     @include min-1400 {
-        height: 600px;
-        width: 600px;
+        height: 525px !important;
+        width: 525px !important;
     }
     @include min-1920 {
-        height: 650px;
-        width: 650px;
+        height: 525px !important;
+        width: 525px !important;
     }
 }
 
