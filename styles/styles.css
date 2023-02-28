@@ -132,7 +132,8 @@
   font-size: 2rem !important;
   font-family: 'Quicksand', sans-serif !important;
   opacity: 0.7 !important;
-  color: #1F2421 !important; }
+  color: #1F2421 !important;
+  cursor: pointer !important; }
   @media (min-width: 1400px) {
     .nav-link {
       font-size: 2.7rem !important; } }
@@ -236,7 +237,7 @@
     transform: rotate(1turn); } }
 
 .loadingpage {
-  background-color: black;
+  background-color: #1F2421;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -250,6 +251,17 @@
 @media (min-width: 1200px) {
   .index-inicio {
     display: none; } }
+
+.menu-click {
+  background-color: #1F2421;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 1s ease; }
+  .menu-click:target {
+    transition: all 1s ease;
+    z-index: 11000;
+    opacity: 1; }
 
 .bienvenida-inicio {
   display: none; }

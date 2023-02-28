@@ -44,3 +44,77 @@ function popup5 () {
 function popup6 () {
     $('.service-icon6').css('background-color', '#06D6A0')    
 }
+
+function menuClick5 () {
+    setTimeout(function() {
+        window.location.href ="./portfolio.html"
+    }, 1650) 
+}   
+
+function menuClick1 () {
+    setTimeout(function() {
+        window.location.href ="./home.html"
+    }, 1650) 
+}
+
+function menuClick2 () {
+    setTimeout(function() {
+        window.location.href ="./about.html"
+    }, 1650) 
+}
+
+function menuClick3 () {
+    setTimeout(function() {
+        window.location.href ="./education.html"
+    }, 1650) 
+}
+
+function menuClick4 () {
+    setTimeout(function() {
+        window.location.href ="./services.html"
+    }, 1650) 
+}
+
+function menuClick6 () {
+    setTimeout(function() {
+        window.location.href ="./contact.html"
+    }, 1650) 
+}
+
+// INDEX 
+
+function menuClick5I () {
+    setTimeout(function() {
+        window.location.href ="./pages/portfolio.html"
+    }, 1650) 
+}   
+
+function menuClick1I () {
+    setTimeout(function() {
+        window.location.href ="./pages/home.html"
+    }, 1650) 
+}
+
+function menuClick2I () {
+    setTimeout(function() {
+        window.location.href ="./pages/about.html"
+    }, 1650) 
+}
+
+function menuClick3I () {
+    setTimeout(function() {
+        window.location.href ="./pages/education.html"
+    }, 1650) 
+}
+
+function menuClick4I () {
+    setTimeout(function() {
+        window.location.href ="./pages/services.html"
+    }, 1650) 
+}
+
+function menuClick6I () {
+    setTimeout(function() {
+        window.location.href ="./pages/contact.html"
+    }, 1650) 
+}
