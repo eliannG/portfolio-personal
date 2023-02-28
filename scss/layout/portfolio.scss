@@ -1,7 +1,6 @@
 
 .portfolio_bgcolor {
     background-color: $tertiary-color;
-    overflow-y: hidden;
     @include min-992 {
         overflow-y: hidden;
     }

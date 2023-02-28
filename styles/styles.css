@@ -1339,8 +1339,7 @@
     transform: translateY(20px); } }
 
 .portfolio_bgcolor {
-  background-color: #1F2421;
-  overflow-y: hidden; }
+  background-color: #1F2421; }
   @media (min-width: 992px) {
     .portfolio_bgcolor {
       overflow-y: hidden; } }
@@ -1491,8 +1490,12 @@
   background-color: #1F2421; }
 
 .social-icon {
-  height: 5rem;
-  width: 5rem; }
+  height: 3.5rem;
+  width: 3.5rem; }
+  @media (min-width: 576px) {
+    .social-icon {
+      height: 5rem;
+      width: 5rem; } }
   @media (min-width: 1920px) {
     .social-icon {
       height: 6.5rem;
