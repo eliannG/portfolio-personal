@@ -64,3 +64,16 @@
         }
     }
 }
+
+.mobile {
+    @include min-992 {
+        display: none;
+    }
+}
+
+.desktop {
+    display: none;
+    @include min-992 {
+        display: block;
+    }
+}

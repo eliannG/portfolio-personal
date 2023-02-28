@@ -19,6 +19,10 @@ window.onload = function() {
         $('#onload4').fadeOut();
         $('.portfolio_bgcolor').css('overflow-y', 'visible')
     }, 11400) 
+    setTimeout(function() {
+        $('#onload5').fadeOut();
+        $('.education-body').css('overflow-y', 'visible')
+    }, 10800) 
 };
 
 function popup1 () {
