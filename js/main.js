@@ -8,7 +8,6 @@ window.onload = function() {
     }, 1500) 
     setTimeout(function() {
         $('#onload2').fadeOut();
-        $('.education-body').css('overflow-y', 'visible')
         $('.about-body_bgcolor').css('overflow-y', 'visible')
     }, 4700) 
     setTimeout(function() {
@@ -47,74 +46,36 @@ function popup6 () {
 
 function menuClick5 () {
     setTimeout(function() {
-        window.location.href ="./portfolio.html"
+        window.location.href ='../pages/portfolio.html'
     }, 1650) 
 }   
 
 function menuClick1 () {
     setTimeout(function() {
-        window.location.href ="./home.html"
+        window.location.href ='../pages/home.html'
     }, 1650) 
 }
 
 function menuClick2 () {
     setTimeout(function() {
-        window.location.href ="./about.html"
+        window.location.href ='../pages/about.html'
     }, 1650) 
 }
 
 function menuClick3 () {
     setTimeout(function() {
-        window.location.href ="./education.html"
+        window.location.href ='../pages/education.html'
     }, 1650) 
 }
 
 function menuClick4 () {
     setTimeout(function() {
-        window.location.href ="./services.html"
+        window.location.href ='../pages/services.html'
     }, 1650) 
 }
 
 function menuClick6 () {
     setTimeout(function() {
-        window.location.href ="./contact.html"
-    }, 1650) 
-}
-
-// INDEX 
-
-function menuClick5I () {
-    setTimeout(function() {
-        window.location.href ="./pages/portfolio.html"
-    }, 1650) 
-}   
-
-function menuClick1I () {
-    setTimeout(function() {
-        window.location.href ="./pages/home.html"
-    }, 1650) 
-}
-
-function menuClick2I () {
-    setTimeout(function() {
-        window.location.href ="./pages/about.html"
-    }, 1650) 
-}
-
-function menuClick3I () {
-    setTimeout(function() {
-        window.location.href ="./pages/education.html"
-    }, 1650) 
-}
-
-function menuClick4I () {
-    setTimeout(function() {
-        window.location.href ="./pages/services.html"
-    }, 1650) 
-}
-
-function menuClick6I () {
-    setTimeout(function() {
-        window.location.href ="./pages/contact.html"
+        window.location.href ='../pages/contact.html'
     }, 1650) 
 }

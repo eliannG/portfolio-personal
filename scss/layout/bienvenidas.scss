@@ -12,7 +12,7 @@
             img {
                 height: 4rem;
                 opacity: 0;
-                animation: binicio-img 13s linear 4s;
+                animation: binicio-img 8s linear 2s;
                 animation-fill-mode: forwards;
             }
             .inicio-pant0 {
@@ -21,74 +21,12 @@
                     color: $primary-color;
                     font-size: 1.25rem;
                     opacity: 0;
-                    animation: binicio-p 9s linear 6s;
+                    animation: binicio-p 6s linear 3s;
                     animation-fill-mode: forwards;   
                 }
 
             }
-
-        .inicio-pant1 {
-            opacity: 0;
-            h3 {
-                color: $primary-color;
-                font-family: 'Quicksand', sans-serif;
-                font-size: 5rem;
-                @include min-576 {
-                    font-size: 6.3rem;
-                }
-                @include min-1550 {
-                    font-size: 10.5rem;
-                }
-            }
-            animation: binicio-pant 3.9s linear 18.8s;
-            animation-fill-mode: forwards;
-        }
-        .inicio-pant2 {
-            opacity: 0;
-            h4 {
-                color: $primary-color;
-                font-family: 'Quicksand', sans-serif;
-                font-size: 5rem;
-                @include min-576 {
-                    font-size: 6.3rem;
-                }
-                @include min-1550 {
-                    font-size: 10.5rem;
-                }
-                font-weight: light;
-            }
-            animation: binicio-pant 3.9s linear 23.4s;
-            animation-fill-mode: forwards;
-        }
-        .inicio-pant3 {
-            opacity: 0;
-            h2 {
-                .blink-effect {
-                    display: block;
-                    color: $primary-color;
-                    font-family: monospace;
-                    white-space: nowrap;
-                    border-right: 4px solid;
-                    width: 57ch;
-                    animation: typing 4s steps(57), blink .4s infinite step-end alternate;
-                    animation-delay: 27.5s;
-                    overflow:hidden;
-                }
-            }
-            animation: binicio-pant 8s linear 28s;
-            animation-fill-mode: forwards;
-        }
-        .inicio-pant4 {
-            p{        
-                font-family: 'Quicksand', sans-serif;
-                color: $primary-color;
-                font-size: 1.25rem;
-                opacity: 0;
-                animation: binicio-pant 5s linear 37s;
-                animation-fill-mode: forwards;
-            }
-        }
-        animation: bienvenida-inicio 2s linear 42s;
+        animation: bienvenida-inicio 2s linear 9.60s;
         animation-fill-mode: forwards;
     }
         
@@ -129,25 +67,6 @@
         z-index: -40;
     }
 }
-
-@keyframes binicio-pant {
-    0%{
-        opacity: 0;
-    }
-    17% {
-        opacity: 1;
-    }
-    83% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-        z-index: -40;
-    }
-
-
-}
-
 
 @keyframes bienvenida-inicio {
     0% {

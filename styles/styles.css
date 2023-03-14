@@ -272,71 +272,19 @@
       height: 100vh;
       width: 100vw;
       z-index: 9999;
-      animation: bienvenida-inicio 2s linear 42s;
+      animation: bienvenida-inicio 2s linear 9.60s;
       animation-fill-mode: forwards; }
       .bienvenida-inicio img {
         height: 4rem;
         opacity: 0;
-        animation: binicio-img 13s linear 4s;
+        animation: binicio-img 8s linear 2s;
         animation-fill-mode: forwards; }
       .bienvenida-inicio .inicio-pant0 p {
         font-family: 'Quicksand', sans-serif;
         color: #dbd9db;
         font-size: 1.25rem;
         opacity: 0;
-        animation: binicio-p 9s linear 6s;
-        animation-fill-mode: forwards; }
-      .bienvenida-inicio .inicio-pant1 {
-        opacity: 0;
-        animation: binicio-pant 3.9s linear 18.8s;
-        animation-fill-mode: forwards; }
-        .bienvenida-inicio .inicio-pant1 h3 {
-          color: #dbd9db;
-          font-family: 'Quicksand', sans-serif;
-          font-size: 5rem; } }
-      @media (min-width: 1200px) and (min-width: 576px) {
-        .bienvenida-inicio .inicio-pant1 h3 {
-          font-size: 6.3rem; } }
-      @media (min-width: 1200px) and (min-width: 1550px) {
-        .bienvenida-inicio .inicio-pant1 h3 {
-          font-size: 10.5rem; } }
-  @media (min-width: 1200px) {
-      .bienvenida-inicio .inicio-pant2 {
-        opacity: 0;
-        animation: binicio-pant 3.9s linear 23.4s;
-        animation-fill-mode: forwards; }
-        .bienvenida-inicio .inicio-pant2 h4 {
-          color: #dbd9db;
-          font-family: 'Quicksand', sans-serif;
-          font-size: 5rem;
-          font-weight: light; } }
-      @media (min-width: 1200px) and (min-width: 576px) {
-        .bienvenida-inicio .inicio-pant2 h4 {
-          font-size: 6.3rem; } }
-      @media (min-width: 1200px) and (min-width: 1550px) {
-        .bienvenida-inicio .inicio-pant2 h4 {
-          font-size: 10.5rem; } }
-  @media (min-width: 1200px) {
-      .bienvenida-inicio .inicio-pant3 {
-        opacity: 0;
-        animation: binicio-pant 8s linear 28s;
-        animation-fill-mode: forwards; }
-        .bienvenida-inicio .inicio-pant3 h2 .blink-effect {
-          display: block;
-          color: #dbd9db;
-          font-family: monospace;
-          white-space: nowrap;
-          border-right: 4px solid;
-          width: 57ch;
-          animation: typing 4s steps(57), blink 0.4s infinite step-end alternate;
-          animation-delay: 27.5s;
-          overflow: hidden; }
-      .bienvenida-inicio .inicio-pant4 p {
-        font-family: 'Quicksand', sans-serif;
-        color: #dbd9db;
-        font-size: 1.25rem;
-        opacity: 0;
-        animation: binicio-pant 5s linear 37s;
+        animation: binicio-p 6s linear 3s;
         animation-fill-mode: forwards; } }
 
 @keyframes binicio-img {
@@ -356,17 +304,6 @@
   11% {
     opacity: 1; }
   89% {
-    opacity: 1; }
-  100% {
-    opacity: 0;
-    z-index: -40; } }
-
-@keyframes binicio-pant {
-  0% {
-    opacity: 0; }
-  17% {
-    opacity: 1; }
-  83% {
     opacity: 1; }
   100% {
     opacity: 0;
