@@ -53,7 +53,7 @@
 }
 
 .education-itemsline {
-    height: 330vh;
+    height: 385vh;
     background-color: $secondary-color;
     width: 0.35rem;
     @include max-768 {
@@ -77,7 +77,29 @@
     -webkit-box-shadow:0px 0px 15px 0px rgba(219,217,219,0.5);
     -moz-box-shadow: 0px 0px 15px 0px rgba(219,217,219,0.5);
     box-shadow: 0px 0px 15px 0px rgba(219,217,219,0.5);
+    transition: all 0.2s linear;
+    &:hover {
+        transition: all 0.2s linear;
+        background-color: $primary-color;
+        border-radius: 0px;
+        .card-title {
+            color: $tertiary-color;
+        }
+    }
+
 }
+
+.education-notfinished_hover {
+    &:hover {
+        background: rgba(219, 217, 219, 0.07);
+        border-radius: 16px;
+
+    .card-title {
+        color: $primary-color;
+    }
+    }
+}
+
 
 .card-icon {
     width: 3.3rem;
@@ -227,4 +249,8 @@
       opacity: 1;
       transform: translateY(20px);
     }
+}
+
+.a-underline {
+    text-decoration: none;
 }

@@ -22,16 +22,16 @@
 .skills-icons {
     img {
         height: auto;
-        width: 3.5rem;   
+        width: 3.1rem;   
         border-top-color: $primary-color !important;
         border-bottom-color: $primary-color !important;
         border-left-color: $primary-color !important;
         border-right-color: $primary-color !important;
         @include min-768 {
-            width: 5rem;
+            width: 4.2rem;
         }
         @include min-1920 {
-            width: 6rem;
+            width: 5.35rem;
         }
     }
     border-radius: 20px;

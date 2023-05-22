@@ -79,3 +79,9 @@ function menuClick6 () {
         window.location.href ='../pages/contact.html'
     }, 1650) 
 }
+
+function closeOffcanvas() {
+    setTimeout(function() {
+      document.body.style.overflow = 'auto';
+    }, 550);
+  }
